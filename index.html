@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#FF9FB2">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <title>Sweet Delights Cupcakes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sections.css">
+    <link rel="stylesheet" href="styles/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="loading-overlay">
+        <img src="images/cupcake-loader.gif" alt="Loading..." class="cupcake-loader">
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <div class="logo-text">
+                <span class="text-flip">
+                    <span class="primary">Sweet</span>
+                    <span class="secondary">Delights</span>
+                </span>
+                <span class="cat-text">Cupcake Boutique</span>
+            </div>
+        </div>
+        
+        <button class="hamburger" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="nav-links">
+            <a href="#menu">Menu</a>
+            <a href="#specials">Daily Specials</a>
+            <a href="#custom">Custom Orders</a>
+            <a href="#about">About Us</a>
+            <a href="#order" class="cta-button">Order Now</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <!-- Add decorative elements -->
+        <div class="decorative-element cupcake-float" style="top: 15%; left: 10%;">🧁</div>
+        <div class="decorative-element sprinkle" style="top: 25%; left: 20%;">✨</div>
+        <div class="decorative-element cupcake-float" style="top: 75%; left: 15%;">🍰</div>
+        <div class="decorative-element sprinkle" style="top: 65%; left: 85%;">✨</div>
+        <div class="decorative-element cupcake-float" style="top: 20%; right: 15%;">🧁</div>
+
+        <div class="hero-content">
+            <h1 class="hero-title">Sweet Delights</h1>
+            <p class="tagline">Handcrafted with Love</p>
+            <p class="subtitle">Experience the perfect blend of flavor and artistry</p>
+            <div class="cta-buttons">
+                <a href="#order" class="primary-button">Order Now</a>
+                <a href="#menu" class="secondary-button">View Menu</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <img src="hero.png" alt="Delicious Cupcakes">
+        </div>
+    </header>
+
+    <!-- Featured Products Section -->
+    <section id="menu" class="featured-products fade-up">
+        <h2 class="section-title">Our Delicious Cupcakes</h2>
+        <p class="section-subtitle">Freshly baked with love every day</p>
+        
+        <div class="products-grid">
+            <div class="product-card fade-up">
+                <div class="product-image">
+                    <img src="vanillacup.png" alt="Vanilla Dream">
+                    <button class="quick-view">Quick View</button>
+                </div>
+                <h3>Vanilla Dream</h3>
+                <p>Classic vanilla with buttercream frosting</p>
+                <span class="price">$3.99</span>
+                <button class="primary-button">Add to Cart</button>
+            </div>
+            <!-- Add more product cards -->
+        </div>
+    </section>
+
+    <!-- Daily Specials Section -->
+    <section id="specials" class="daily-specials parallax fade-up">
+        <div class="special-content">
+            <h2 class="section-title">Today's Specials</h2>
+            <div class="special-grid">
+                <div class="special-card">
+                    <div class="special-badge">NEW</div>
+                    <img src="redvelvet.png" alt="Special Cupcake">
+                    <div class="special-info">
+                        <h3>Red Velvet Delight</h3>
+                        <p>Limited time offer</p>
+                        <span class="price">$4.99</span>
+                        <button class="buy-now">Order Now</button>
+                    </div>
+                </div>
+
+                <!-- Add more special cards -->
+                <div class="special-card">
+                    <div class="special-badge">POPULAR</div>
+                    <img src="choclate.png" alt="Chocolate Dream">
+                    <div class="special-info">
+                        <h3>Chocolate Dream</h3>
+                        <p>Rich chocolate ganache</p>
+                        <span class="price">$4.49</span>
+                        <button class="buy-now">Order Now</button>
+                    </div>
+                </div>
+
+                <div class="special-card">
+                    <div class="special-badge">SEASONAL</div>
+                    <img src="strawbery .png" alt="Strawberry Bliss">
+                    <div class="special-info">
+                        <h3>Strawberry Bliss</h3>
+                        <p>Fresh strawberry cream</p>
+                        <span class="price">$4.79</span>
+                        <button class="buy-now">Order Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Custom Orders Section -->
+    <section id="custom" class="custom-orders">
+        <div class="custom-content">
+            <h2 class="section-title">Custom Orders</h2>
+            <p class="section-subtitle">Create your perfect cupcake experience</p>
+            
+            <form class="custom-form">
+                <div class="form-group">
+                    <label for="occasion">Occasion</label>
+                    <select id="occasion" required>
+                        <option value="">Select an occasion</option>
+                        <option value="birthday">Birthday</option>
+                        <option value="wedding">Wedding</option>
+                        <option value="corporate">Corporate Event</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Number of Cupcakes</label>
+                    <input type="number" id="quantity" min="6" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Special Instructions</label>
+                    <textarea id="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="primary-button">Request Quote</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-us">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="section-title">Our Story</h2>
+                <p>Sweet Delights began with a passion for creating perfect cupcakes. Every recipe is crafted with care and the finest ingredients.</p>
+                <div class="stats">
+                    <div class="stat-item">
+                        <span class="stat-number">50+</span>
+                        <span class="stat-label">Flavors</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">1000+</span>
+                        <span class="stat-label">Happy Customers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="ourbakery.jpg" alt="Our Bakery">
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonials-container">
+            <button class="slider-btn prev-btn" aria-label="Previous testimonial">❮</button>
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="quote">❝</div>
+                    <p>The best cupcakes I've ever tasted! Perfect for my daughter's birthday party. The decorations were absolutely stunning.</p>
+                    <div class="customer-info">
+                        <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="Customer">
+                        <div>
+                            <h4>Sarah Johnson</h4>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote">❝</div>
+                    <p>The chocolate ganache cupcakes are heavenly! I ordered them for my office party and everyone was asking for more.</p>
+                    <div class="customer-info">
+                        <img src="https://randomuser.me/api/portraits/women/3.jpg" alt="Customer">
+                        <div>
+                            <h4>Lisa Chen</h4>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote">❝</div>
+                    <p>Their seasonal flavors are always creative and delicious. The pumpkin spice cupcakes during fall are my favorite!</p>
+                    <div class="customer-info">
+                        <img src="https://randomuser.me/api/portraits/men/3.jpg" alt="Customer">
+                        <div>
+                            <h4>David Martinez</h4>
+                            <span class="stars">⭐⭐⭐⭐½</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote">❝</div>
+                    <p>Ordered gluten-free cupcakes for my friend's birthday. They were just as delicious as the regular ones!</p>
+                    <div class="customer-info">
+                        <img src="https://randomuser.me/api/portraits/women/4.jpg" alt="Customer">
+                        <div>
+                            <h4>Rachel Green</h4>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote">❝</div>
+                    <p>The mini cupcake assortment was perfect for our wedding tasting. Such a great variety of flavors!</p>
+                    <div class="customer-info">
+                        <img src="https://randomuser.me/api/portraits/men/4.jpg" alt="Customer">
+                        <div>
+                            <h4>Tom Anderson</h4>
+                            <span class="stars">⭐⭐⭐⭐½</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote">❝</div>
+                    <p>Their vegan cupcakes are amazing! Finally found a bakery that makes them taste just like regular cupcakes.</p>
+                    <div class="customer-info">
+                        <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="Customer">
+                        <div>
+                            <h4>Emma Wilson</h4>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote">❝</div>
+                    <p>The custom design service is fantastic! They recreated my daughter's favorite cartoon character perfectly.</p>
+                    <div class="customer-info">
+                        <img src="https://randomuser.me/api/portraits/men/5.jpg" alt="Customer">
+                        <div>
+                            <h4>Chris Taylor</h4>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="quote">❝</div>
+                    <p>Love their monthly special flavors! The delivery service is always on time and the cupcakes arrive perfect.</p>
+                    <div class="customer-info">
+                        <img src="https://randomuser.me/api/portraits/women/6.jpg" alt="Customer">
+                        <div>
+                            <h4>Sophie Turner</h4>
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-btn next-btn" aria-label="Next testimonial">❯</button>
+        </div>
+        <div class="slider-dots"></div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3><i class="fas fa-map-marker-alt"></i> Visit Us</h3>
+                <p><i class="fas fa-building"></i> 123 Bakery Street<br>Sweet Town, ST 12345</p>
+                <p><i class="far fa-clock"></i> Mon-Sat: 8am - 8pm<br>Sunday: 9am - 6pm</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-phone-alt"></i> Contact</h3>
+                <p><i class="fas fa-phone"></i> (555) 123-4567</p>
+                <p><i class="fas fa-envelope"></i> hello@sweetdelights.com</p>
+            </div>
+            <div class="footer-section">
+                <h3><i class="fas fa-heart"></i> Follow Us</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" class="social-icon"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Sweet Delights. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/animations.js"></script>
+    <script src="scripts/testimonials.js"></script>
+</body>
+</html> 
