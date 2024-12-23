@@ -1,0 +1,142 @@
+/* Simplified animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-up {
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* Subtle hover effects */
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(255, 159, 178, 0.3);
+}
+
+/* Simple loading animation */
+.loading-overlay {
+    background: white;
+}
+
+.loading-overlay::after {
+    content: '🧁';
+    font-size: 2rem;
+    animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Enhanced animations */
+@keyframes floatIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50px) scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes sparkleText {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(255, 159, 178, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(255, 159, 178, 0.8);
+    }
+}
+
+@keyframes floatingCupcakes {
+    0%, 100% {
+        transform: translateY(0) rotate(0);
+    }
+    50% {
+        transform: translateY(-20px) rotate(5deg);
+    }
+}
+
+/* Decorative elements animations */
+@keyframes sprinkle {
+    0%, 100% {
+        transform: scale(1) rotate(0);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1.2) rotate(180deg);
+        opacity: 0.8;
+    }
+}
+
+/* Apply animations to hero elements */
+.hero-content {
+    animation: floatIn 1s ease-out forwards;
+}
+
+.hero-image {
+    animation: slideInFromRight 1s ease-out 0.3s both;
+}
+
+.hero-content h1 {
+    animation: sparkleText 2s ease-in-out infinite;
+}
+
+/* Decorative elements */
+.decorative-element {
+    position: absolute;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.cupcake-float {
+    font-size: 2rem;
+    animation: floatingCupcakes 3s ease-in-out infinite;
+}
+
+.sprinkle {
+    font-size: 1.5rem;
+    animation: sprinkle 2s ease-in-out infinite;
+}
+
+/* Add these classes to your hero section */
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: radial-gradient(circle at 50% 50%, rgba(255, 240, 243, 0.8) 0%, transparent 70%);
+    pointer-events: none;
+}
+  
